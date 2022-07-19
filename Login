@@ -1,0 +1,7 @@
+$ curl https://builder.cecer.army.mil/USA/WebService/Builder.svc?wsdl
+var service = new BuilderClient( );
+
+service.ClientCredentials.Username.Username = "<your BUILDER user name>";
+service.ClientCredentials.Username.Password= "<your BUILDER password>";
+service.Endpoint.Address = new Endpoint.Address("https://builder.cecer.army.mil/USA/WebService/Builder.svc?wsdl");
+_client = service;
